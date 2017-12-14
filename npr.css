@@ -3,5 +3,24 @@ body {
     background-image: url("http://touchechicago.com/wp-content/uploads/2013/10/background-grey.jpg");
 }
 .btn-info {
-   margin-left: 80px;   
+   margin-left: 0px;
+     
+}
+.head {
+    margin: 90px;
+   
+}
+.container {
+    display: block;
+    margin-left: 540px;
+    margin-top: 90px
+}
+#p,
+#r,
+#n {
+    display: flex;
+
+}
+.btn-danger {
+   
 }

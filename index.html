@@ -14,38 +14,31 @@
         crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
         crossorigin="anonymous"></script>
+    <script src="scripts\simple.int.calc.js"></script>
     <link rel="stylesheet" href="npr.css">
 </head>
 
 <body>
-    <script>
-        function calculate() {
-            p = document.getElementById("p").value;
-            n = document.getElementById("n").value;
-            r = document.getElementById("r").value;
-            result = document.getElementById("result");
 
-            result.innerHTML = "The interest is " + (p * n * r / 100);
-        }
-    </script>
     </head>
 
     <body>
-       <center><h1>Simple Interest Calculation</h1></center>
-    <div class="container">
-       Amount:
-        <input id="p"><br>
-        <br> 
-       Rate:
-        &nbsp &nbsp &nbsp <input id="r"><br>
-        <br/>Years:
-        &nbsp &nbsp &nbsp <input id="n">
-    </div>
-        <br/>
+        <center>
+            <p class="head"><h1>Simple Interest Calculation</h1></p>
+        </center>
+        <div class="container">
+            Amount:
+            <input id="p">
+            <br> Rate:
+            <input id="r">
+            <br> Years:
+            <input id="n">
 
-      
-        <button type="button" class="btn btn-info" onclick="calculate()">Calculate</button>
-        <p id="result"></p>
+            <br/>
+
+            <p id="result"></p>
+            <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" data-content="Result shows interest over x number of years." onclick="calculate()">Calculate</button>
+        </div>
     </body>
 
 </html>
