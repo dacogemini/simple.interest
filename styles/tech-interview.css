@@ -1,0 +1,20 @@
+h1 {
+    font-family: 'Varela Round', sans-serif;
+}
+h2 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 22px;
+    margin-right: 75px;
+}
+p {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+}
+.container {
+    display: scroll;
+    background-color:  white;
+    line-height: 25px;
+    width: 70%;
+    height: auto;
+    margin-left: 200px;
+}

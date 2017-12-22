@@ -1,0 +1,181 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  font: 600 12px/1 'Open Sans', sans-serif;
+  color: #333;
+  background: #333;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: flex;
+  min-height: 100%;
+}
+
+.sidebar {
+  position: absolute;
+  width: 220px;
+}
+
+.content {
+  flex: 1;
+  padding: 30px;
+  background: #eee;
+  box-shadow: 0 0 5px black;
+  transform: translate3d(0, 0, 0);
+  transition: transform .3s;
+}
+
+.content.isOpen {
+  transform: translate3d(220px, 0, 0);
+}
+
+.button {
+  cursor: pointer;
+}
+
+.button:before {
+  content: '\f0c9';
+  font: 42px fontawesome;
+}
+
+
+/* Demo Navigation */
+
+.title {
+  font-size: 16px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  color: #eee;
+  background: #2a2a2a;
+}
+
+.nav li a {
+  position: relative;
+  display: block;
+  padding: 20px 0 20px 50px;
+  font-size: 12px;
+  color: #eee;
+}
+
+.nav li a:before {
+  font: 14px fontawesome;
+  position: absolute;
+  top: 19px;
+  left: 20px;
+}
+
+.nav li:nth-child(1) a:before {
+  content: '\f19c';
+}
+
+.nav li a:hover {
+  background: #444;
+}
+
+.nav li a.active {
+  box-shadow: inset 5px 0 0 #5b5, inset 6px 0 0 #222;
+  background: #444;
+}
+
+
+/* Demo Description */
+
+h1 {
+  font-family: 'Spectral SC', serif;
+  margin: 25px 0 15px;
+  font-size: 35px;
+  font-weight: 400;
+}
+
+p {
+  font-family: 'Varela Round', sans-serif;
+  margin: 25px 0 15px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.sic {
+    width: 20%;
+    height: auto;
+}
+.sic-1 {
+    width: 5%;
+    height: auto;
+}
+.list-1 {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.list-2 {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  margin-left: 40px;
+}
+
+.container {
+  display: scroll;
+  background-color: whitesmoke;
+  line-height: 25px;
+  width: 70%;
+  height: auto;
+  margin-left: 5px;
+  margin-top: 30px;
+}
+.toc {
+  margin-left: 40px;
+}
+.mr-1 {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 35px;
+}
+.feature-title {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 35px;
+}
+.ul {
+  font-family: 'Varela Round', sans-serif;
+  line-height: 30px;
+  margin: 25px 20px 15px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.ol {
+  font-family: 'Varela Round', sans-serif;
+  line-height: 30px;
+  margin: 25px 20px 15px;
+  font-size: 16px;
+  font-weight: 400;
+}
+a:link {
+  color: gray;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}

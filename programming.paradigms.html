@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Karla|Spectral+SC" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/programming.paradigms.css">
+
+    <STYLE>
+        A {
+            text-decoration: none
+        }
+    </STYLE>
+    <title>Learn</title>
+
+    <script src="https://use.fontawesome.com/fa71049392.js"></script>
+
+</head>
+
+<body>
+    <div class='wrapper'>
+        <div class='sidebar'>
+            <div class='title'>
+                <a href="index.html">DASHBOARD</a>
+            </div>
+            <ul class='nav'>
+                <li>
+                    <a href="dashboard/Page-2.html">Programming Paradigms</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class='content isOpen'>
+
+            <h1>Programming Paradigms</h1>
+            <nav>
+                <ul class="pagination pg-darkgrey">
+                    <!--Arrow left-->
+                    <li class="page-item">
+                        <a class="page-link" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                    </li>
+
+                    <!--Numbers-->
+                    <li class="page-item active">
+                        <a class="page-link">A</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link">B</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link">C</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link">D</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link">E</a>
+                    </li>
+
+                    <!--Arrow right-->
+                    <li class="page-item">
+                        <a class="page-link" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class=container>
+                <p>
+                    <strong>What is a programming paridigm and why should I care?</strong>
+                </p>
+                <p>A programming paradigm is a style of programming. There are many different programming paradigms. In this
+                    tutorial we'll learn about
+                    <em>procedural programming</em>,
+                    <em>functional programming, and object-oriented programming
+                    </em>— with a focus on object-oriented programming.
+                </p>
+                <p>
+                    <h3>PRELIMINARY:</h3>
+                </p>
+                <p>
+                    STATE
+                    <br> One of the fundamental differences between the various programming paradigms is the handling of state.
+                    State is the value of a program's variables while it is running. Global state is the value of a program's
+                    global variables while it is running.
+                </p>
+                <hr>
+                <center>
+
+                    <br>
+
+                    <h1>PROCEDURAL PROGRAMMING</h1>
+                </center>
+                <p>
+                    procedural programming is a programming style in which you write a sequence of steps moving toward a solution — each step
+                    changing the program's state (or value of the program's variables). In procedural programming, you write
+                    code to "do this, then that":
+                </p>
+                <h4>EXAMPLE:</h4>
+                <p>
+                    x = 2
+                    <br> y = 4
+                    <br> z = 8
+                    <br> xyz = x + y + z
+                    <br> xyz
+                    <br>
+                </p>
+                <p>
+                    When you program procedurally, you store data in global variables and manipulate it with functions. Consider the following:
+                </p>
+                <p>
+                    var f = (function (){
+                    <br> &nbsp &nbsp var b = 10,
+                    <br> &nbsp &nbsp &nbsp &nbsp &nbsp c = 20,
+                    <br> &nbsp &nbsp &nbsp &nbsp &nbsp d = 50;
+                    <br> var e = function(){
+                    <br> &nbsp &nbsp return b + c + d;
+                    <br> };
+                    <br> return e();
+                    <br> }());
+                </p>
+                <p>
+                    We've taken the above code and added a var f = in front of the function. This returns the value of e() from the inner function
+                    to f and now you have a value f to be used elsewhere. Since the variables b, c, d, e are declared within
+                    the function scope of the anonymous function, we can ensure that they will not be tampered with. This
+                    is a way to do private variables in JavaScript. Now say you had 10 + 20 + 50 may places within your code.
+                    You could run this anonymous function at the beginning and substitute those occurrences with f. This
+                    idea of abstracting out code into various procedures is why it's referred to as Procedural Programming.
+                </p>
+                <hr>
+                <h1>OBJECT ORIENTED PROGRAMMING (OOP)</h1>
+                </center>
+                <p>
+                    The object-oriented programming paradigm addresses the problems that arise in procedural programming by eliminating
+                    global state, but instead of storing state in functions, it is stored in objects.
+
+
+                </p>
+                <br>
+
+
+                <!--Projects section v.3-->
+                <section class="section extra-margins">
+
+                    <!--Section heading-->
+                    <h2 class="section-heading h1 mt-5">
+                        <strong>HTML</strong>
+                    </h2>
+                    <!--Section description-->
+                    <p class="section-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                        est laborum.</p>
+
+
+                    <i class="fa fa-handshake-o fa-2x" aria-hidden="true"></i>
+
+                    <h5>WEBSOCKETS</h5>
+                    <p>WebSockets provide a persistent connection between a client and server that both parties can use to start
+                        sending data at any time...</p>
+
+                    <hr>
+                    <h2 class="section-heading h1 mt-5">
+                        <strong>JAVASCRIPT</strong>
+                    </h2>
+                    <!--Section description-->
+                    <p class="section-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                        est laborum.</p>
+
+
+                    <i class="fa fa-play-circle-o fa-2x" aria-hidden="true"></i>
+
+                    <br>
+                    <h4>FOR LOOPS</h4>
+                    <p>The for statement creates a loop that consists of three optional expressions, enclosed in parentheses
+                        and separated by semicolons, followed by a statement (usually a block statement) to be executed in
+                        the loop.</p>
+                    <h5>EXAMPLE:</h5>
+                    <p>for ( [
+                        <em> initialization </em>]; [
+                        <em> condition </em> ]; [
+                        <em> final-expression </em> ] ) statement
+                    </p>
+                    <p>
+                        Within the parentheses of a for statement, follow these steps:
+                        <ul class="ul">
+                            <li>
+                                <strong>Initialize</strong> a counter (or index) variable that will be used within the loop.
+                                <li>
+                                    Then, code a
+                                    <strong>condition</strong> that determines when the loop will end.
+                                </li>
+                                <li>
+                                    Last, you code an
+                                    <strong>expression</strong> that specifies how the counter should be incremented.
+
+                                </li>
+                        </ul>
+                    </p>
+                    <ol class="ol">
+                        <label>Examples:</label>
+                        <li>
+                            Write a JavaScript for loop that will iterate from 0 to 15. For each iteration, it will check if the current number is odd
+                            or even, and display a message to the screen.
+                            <p>
+
+                                <label>INITIALIZE</label>
+                            </p>
+                            for (var x = 0; ... )
+                        </li>
+
+                        <p>
+                            <label>CODE CONDITION</label>
+                        </p>
+                        for (var x=0;
+                        <strong>x
+                            <=1 5;</strong> ... ) {
+                                <p>
+                                    <label>CODE EXPRESSION</label>
+                                </p>
+                                for (var x=0; x
+                                <=1 5; <strong>x++</strong>) {
+                        <p>
+                            <label>IF STATEMENT</label>
+                        </p>
+                        if (x === 0) {
+                        <br> &nbsp &nbsp console.log (x + " is even")
+                        <br>else if (x % 2 === 0) {
+                        <br>&nbsp &nbsp console.log (x + " is odd")
+                        <p>
+                            <li>
+                                Write a for loop that calculates the future value of an investment.
+                        </p>
+                        <ul>
+                            <li>var investment = 10,000;</li>
+                            <li>var annualRate = 7.0;</li>
+                            <li>var years = 10;</li>
+                            <li>var futureValue = investment;</li>
+
+                        </ul>
+
+                        </li>
+                    </ol>
+                    <p>* More Practice Examples Here:
+                        <a href="https://www.w3resource.com/javascript-exercises/javascript-conditional-statements-and-loops-exercises.php">Examples</a>
+                        <hr>
+                        <h4>IMMEDIATELY-INVOKED FUNCTION EXPRESSIONS (IIFE)</h4>
+                        <p>
+                            <strong>Normal Function (Invoked Manually)</strong>
+                        </p>
+                        <p>var logMyName = function (name) {
+                            <br> &nbsp &nbsp console.log(name);
+                            <br> }; logMyName('Dan');
+                        </p>
+                        <br>
+                        <h4>
+                            <strong>IIFE:</strong>
+                        </h4>
+                        <p>
+                            var logMyName = (function (name) {
+                            <br> &nbsp &nbsp console.log(name);
+                            <br> &nbsp &nbsp &nbsp &nbsp })('Dan');
+                        </p>
+
+
+
+
+
+                </section>
+                <!--Projects section v.3-->
+
+
+                <!-- Javascript Files -->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
+                </section>
+                <!--Projects section v.3-->
+
+
+                <!-- Javascript Files -->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

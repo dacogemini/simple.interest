@@ -2,52 +2,70 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>NPR Calculator</title>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
-        crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-        crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <link rel="stylesheet" href="styles/portfolio.css">
+  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Karla|Spectral+SC" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+  <STYLE>
+    A {
+      text-decoration: none
+    }
+  </STYLE>
+  <title>Portfolio</title>
 
-   
-    <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
-    <script src="scripts\simple.int.calc.js"></script>
-    <link rel="stylesheet" href="npr.css">
+  <script src="https://use.fontawesome.com/fa71049392.js"></script>
+
 </head>
 
 <body>
+  <div class='wrapper'>
+    <div class='sidebar'>
+      <div class='title'>
+        DASHBOARD
+      </div>
+      <ul class='nav'>
+        <li>
+          <a href="learning.html">Learn</a>
+        </li>
+        <li>
+          <a href="https://github.com/">github</a>
+        </li>
+        <li>
+          <a href="https://nu-evanston-coding-11.slack.com/messages/C7V9SJK6V/team/U7VB8LJLQ/">Slack</a>
+        </li>
+        <li>
+          <a>Codepen</a>
+        </li>
+        <li>
+          <a>Stack-Overflow</a>
+        </li>
+        <li>
+          <a href="programming.paradigms.html">Programming Paradigms</a>
+        </li>
+        <li>
+          <a>Cheatsheets</a>
+        </li>
+        <li>
+          <a>Calendar</a>
+        </li>
+      </ul>
+    </div>
+    <div class='content isOpen'>
+                                   
+      <p>
+        <h1>Dan Collins Portfolio</h1>
+      </p>
+      <h2>Northwestern University Bootcamp</h2>
+    </div>
+      </div>
+  
 
-    </head>
 
-    <body>
-        <center>
-            <p class="head">
-                <h1>Simple Interest Calculation</h1>
-            </p>
-        </center>
-        <div class="container">
-            Amount:
-            <input id="p">
-            <br> Rate:
-            <input id="r">
-            <br> Years:
-            <input id="n">
 
-            <br/>
 
-            <p id="result"></p>
-            <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" data-content="Result shows interest over x number of years."
-                onclick="calculate()">Calculate</button>
-           </div>
-            <div class="text">
-           <p>Like This? See More<a href="https://codepen.io/dacogemini/"> @Codepen <i class="fab fa-codepen"></i></p></a>
-            </div>
-    </body>
+</body>
 
 </html>

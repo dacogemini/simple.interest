@@ -1,0 +1,30 @@
+.mb-3 {
+    background-color: rgb(36, 35, 35);
+    color: white;
+    filter: brightness(100%);
+}
+
+.btn-info {
+    margin-left: 25px;
+    color: rgb(233, 229, 229);
+
+}
+
+.btn-dark:hover {
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+}
+
+.card-title {
+  
+    font-family: 'Patrick Hand', cursive;
+    font-size: 48px;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: flex-start;
+    box-shadow: none;
+}
+
